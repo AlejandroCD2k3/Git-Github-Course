@@ -186,7 +186,7 @@ Here are some important documentation about my Git & GitHub course.
 
         $ git merge "originBranch"
 
-22. GIT STACH
+22. GIT STASH
 
     A stash is a temporary "chest" where we can put some code without the need of committing it, it can be useful if we want to change to another branch, but we dont have to loose the code we're making. It's like a "Hold it for a second, i'll be right back"
 
@@ -195,7 +195,45 @@ Here are some important documentation about my Git & GitHub course.
         $ git stash pop (This one let us take back the archives we have in the stash)
         $ git stash drop (This let us discard the content of the stash)
 
+23. GIT PUSH
 
+    This let us to upload some local work to the remote repository
+
+        $ git push -u origin main
+
+24. GIT FETCH
+
+    Fetch allow us to download the changes history in our local repository without downloading the actual changes (Just updating the log without any other changes)
+
+        $ git fetch (Download all the history)
+
+        $ git fetch origin "branchName" (Download just a single branch history)
+
+25. GIT PULL
+
+    Pull downloads the changes history and the actual changes as well
+
+        $ git pull origin main
+
+26. GIT CLONE
+
+    Cloning a repository let us having a copy of a remote repository in our local machine
+
+        $ git clone "repositoryURL"
+        $ git clone github.com/UserName/RepositoryName
+        $ git clone git@github.com:userName/RepositoryName
+
+27. GIT FORK
+
+    This one copy a foreign remote repository to our own remote repository
+
+        $ git fork "reporitoryURL"
+
+28. GIT REMOTE
+
+    This command allow us to connect with a specific remote repository and communicate with it
+
+        $ git remote add origin "repositoryURL"
     
          
      
